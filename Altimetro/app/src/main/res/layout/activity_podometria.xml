@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Podometria">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,19 +13,20 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_Altimetro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"/>
-
-        <Button
-            android:id="@+id/bt_goto_podometro"
+            android:id="@+id/tv_podometro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Podometro"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="146dp"
-            tools:layout_editor_absoluteY="559dp"/>
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:text="Pasos: 0"/>
+
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Reiniciar contador"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
